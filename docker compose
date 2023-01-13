@@ -1,0 +1,1048 @@
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+OK
+ubuntu@ubunu2004:~$ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+Get:1 https://download.docker.com/linux/ubuntu focal InRelease [57.7 kB]
+Hit:2 http://security.ubuntu.com/ubuntu focal-security InRelease               
+Hit:3 http://in.archive.ubuntu.com/ubuntu focal InRelease                      
+Get:4 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages [22.5 kB]
+Hit:5 http://in.archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:6 http://in.archive.ubuntu.com/ubuntu focal-backports InRelease
+Fetched 80.2 kB in 3s (31.6 kB/s)
+Reading package lists... Done
+ubuntu@ubunu2004:~$ apt-cache policy docker-ce
+docker-ce:
+  Installed: (none)
+  Candidate: 5:20.10.22~3-0~ubuntu-focal
+  Version table:
+     5:20.10.22~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.21~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.20~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.19~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.18~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.17~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.16~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.15~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.14~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.13~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.12~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.11~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.10~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.9~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.8~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.7~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.6~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.5~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.4~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.3~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.2~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.1~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.0~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:19.03.15~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:19.03.14~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:19.03.13~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:19.03.12~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:19.03.11~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:19.03.10~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:19.03.9~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+ubuntu@ubunu2004:~$ apt-cache policy docker-ce
+docker-ce:
+  Installed: (none)
+  Candidate: 5:20.10.22~3-0~ubuntu-focal
+  Version table:
+     5:20.10.22~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.21~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.20~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.19~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.18~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.17~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.16~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.15~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.14~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.13~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.12~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.11~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.10~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.9~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.8~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.7~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.6~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.5~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.4~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.3~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.2~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.1~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:20.10.0~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:19.03.15~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:19.03.14~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:19.03.13~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:19.03.12~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:19.03.11~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:19.03.10~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+     5:19.03.9~3-0~ubuntu-focal 500
+        500 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages
+ubuntu@ubunu2004:~$ sudo apt install docker-ce
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  containerd.io docker-ce-cli docker-ce-rootless-extras docker-scan-plugin git git-man liberror-perl libseccomp2 pigz slirp4netns
+Suggested packages:
+  aufs-tools cgroupfs-mount | cgroup-lite git-daemon-run | git-daemon-sysvinit git-doc git-el git-email git-gui gitk gitweb git-cvs git-mediawiki git-svn
+The following NEW packages will be installed:
+  containerd.io docker-ce docker-ce-cli docker-ce-rootless-extras docker-scan-plugin git git-man liberror-perl pigz slirp4netns
+The following packages will be upgraded:
+  libseccomp2
+1 upgraded, 10 newly installed, 0 to remove and 682 not upgraded.
+Need to get 107 MB of archives.
+After this operation, 422 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 https://download.docker.com/linux/ubuntu focal/stable amd64 containerd.io amd64 1.6.15-1 [27.7 MB]
+Get:2 http://in.archive.ubuntu.com/ubuntu focal/universe amd64 pigz amd64 2.4-1 [57.4 kB] 
+Get:3 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 libseccomp2 amd64 2.5.1-1ubuntu1~20.04.2 [42.5 kB]
+Get:4 http://in.archive.ubuntu.com/ubuntu focal/main amd64 liberror-perl all 0.17029-1 [26.5 kB]
+Get:5 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 git-man all 1:2.25.1-1ubuntu3.6 [887 kB]
+Get:6 http://in.archive.ubuntu.com/ubuntu focal-updates/main amd64 git amd64 1:2.25.1-1ubuntu3.6 [4,529 kB]
+Get:7 http://in.archive.ubuntu.com/ubuntu focal/universe amd64 slirp4netns amd64 0.4.3-1 [74.3 kB]
+Get:8 https://download.docker.com/linux/ubuntu focal/stable amd64 docker-ce-cli amd64 5:20.10.22~3-0~ubuntu-focal [41.5 MB]                                                                               
+Get:9 https://download.docker.com/linux/ubuntu focal/stable amd64 docker-ce amd64 5:20.10.22~3-0~ubuntu-focal [20.5 MB]                                                                                   
+Get:10 https://download.docker.com/linux/ubuntu focal/stable amd64 docker-ce-rootless-extras amd64 5:20.10.22~3-0~ubuntu-focal [8,395 kB]                                                                 
+Get:11 https://download.docker.com/linux/ubuntu focal/stable amd64 docker-scan-plugin amd64 0.23.0~ubuntu-focal [3,622 kB]                                                                                
+Fetched 107 MB in 19s (5,618 kB/s)                                                                                                                                                                        
+Selecting previously unselected package pigz.
+(Reading database ... 152382 files and directories currently installed.)
+Preparing to unpack .../archives/pigz_2.4-1_amd64.deb ...
+Unpacking pigz (2.4-1) ...
+Preparing to unpack .../libseccomp2_2.5.1-1ubuntu1~20.04.2_amd64.deb ...
+Unpacking libseccomp2:amd64 (2.5.1-1ubuntu1~20.04.2) over (2.4.3-1ubuntu1) ...
+Setting up libseccomp2:amd64 (2.5.1-1ubuntu1~20.04.2) ...
+Selecting previously unselected package containerd.io.
+(Reading database ... 152391 files and directories currently installed.)
+Preparing to unpack .../0-containerd.io_1.6.15-1_amd64.deb ...
+Unpacking containerd.io (1.6.15-1) ...
+Selecting previously unselected package docker-ce-cli.
+Preparing to unpack .../1-docker-ce-cli_5%3a20.10.22~3-0~ubuntu-focal_amd64.deb ...
+Unpacking docker-ce-cli (5:20.10.22~3-0~ubuntu-focal) ...
+Selecting previously unselected package docker-ce.
+Preparing to unpack .../2-docker-ce_5%3a20.10.22~3-0~ubuntu-focal_amd64.deb ...
+Unpacking docker-ce (5:20.10.22~3-0~ubuntu-focal) ...
+Selecting previously unselected package docker-ce-rootless-extras.
+Preparing to unpack .../3-docker-ce-rootless-extras_5%3a20.10.22~3-0~ubuntu-focal_amd64.deb ...
+Unpacking docker-ce-rootless-extras (5:20.10.22~3-0~ubuntu-focal) ...
+Selecting previously unselected package docker-scan-plugin.
+Preparing to unpack .../4-docker-scan-plugin_0.23.0~ubuntu-focal_amd64.deb ...
+Unpacking docker-scan-plugin (0.23.0~ubuntu-focal) ...
+Selecting previously unselected package liberror-perl.
+Preparing to unpack .../5-liberror-perl_0.17029-1_all.deb ...
+Unpacking liberror-perl (0.17029-1) ...
+Selecting previously unselected package git-man.
+Preparing to unpack .../6-git-man_1%3a2.25.1-1ubuntu3.6_all.deb ...
+Unpacking git-man (1:2.25.1-1ubuntu3.6) ...
+Selecting previously unselected package git.
+Preparing to unpack .../7-git_1%3a2.25.1-1ubuntu3.6_amd64.deb ...
+Unpacking git (1:2.25.1-1ubuntu3.6) ...
+Selecting previously unselected package slirp4netns.
+Preparing to unpack .../8-slirp4netns_0.4.3-1_amd64.deb ...
+Unpacking slirp4netns (0.4.3-1) ...
+Setting up slirp4netns (0.4.3-1) ...
+Setting up docker-scan-plugin (0.23.0~ubuntu-focal) ...
+Setting up liberror-perl (0.17029-1) ...
+Setting up containerd.io (1.6.15-1) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/containerd.service → /lib/systemd/system/containerd.service.
+Setting up docker-ce-cli (5:20.10.22~3-0~ubuntu-focal) ...
+Setting up pigz (2.4-1) ...
+Setting up git-man (1:2.25.1-1ubuntu3.6) ...
+Setting up docker-ce-rootless-extras (5:20.10.22~3-0~ubuntu-focal) ...
+Setting up docker-ce (5:20.10.22~3-0~ubuntu-focal) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/docker.service → /lib/systemd/system/docker.service.
+Created symlink /etc/systemd/system/sockets.target.wants/docker.socket → /lib/systemd/system/docker.socket.
+Setting up git (1:2.25.1-1ubuntu3.6) ...
+Processing triggers for systemd (245.4-4ubuntu3) ...
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for libc-bin (2.31-0ubuntu9) ...
+ubuntu@ubunu2004:~$ sudo docker -version
+unknown shorthand flag: 'e' in -ersion
+See 'docker --help'.
+
+Usage:  docker [OPTIONS] COMMAND
+
+A self-sufficient runtime for containers
+
+Options:
+      --config string      Location of client config files (default "/root/.docker")
+  -c, --context string     Name of the context to use to connect to the daemon (overrides DOCKER_HOST env var and default context set with "docker context use")
+  -D, --debug              Enable debug mode
+  -H, --host list          Daemon socket(s) to connect to
+  -l, --log-level string   Set the logging level ("debug"|"info"|"warn"|"error"|"fatal") (default "info")
+      --tls                Use TLS; implied by --tlsverify
+      --tlscacert string   Trust certs signed only by this CA (default "/root/.docker/ca.pem")
+      --tlscert string     Path to TLS certificate file (default "/root/.docker/cert.pem")
+      --tlskey string      Path to TLS key file (default "/root/.docker/key.pem")
+      --tlsverify          Use TLS and verify the remote
+  -v, --version            Print version information and quit
+
+Management Commands:
+  app*        Docker App (Docker Inc., v0.9.1-beta3)
+  builder     Manage builds
+  buildx*     Docker Buildx (Docker Inc., v0.9.1-docker)
+  config      Manage Docker configs
+  container   Manage containers
+  context     Manage contexts
+  image       Manage images
+  manifest    Manage Docker image manifests and manifest lists
+  network     Manage networks
+  node        Manage Swarm nodes
+  plugin      Manage plugins
+  scan*       Docker Scan (Docker Inc., v0.23.0)
+  secret      Manage Docker secrets
+  service     Manage services
+  stack       Manage Docker stacks
+  swarm       Manage Swarm
+  system      Manage Docker
+  trust       Manage trust on Docker images
+  volume      Manage volumes
+
+Commands:
+  attach      Attach local standard input, output, and error streams to a running container
+  build       Build an image from a Dockerfile
+  commit      Create a new image from a container's changes
+  cp          Copy files/folders between a container and the local filesystem
+  create      Create a new container
+  diff        Inspect changes to files or directories on a container's filesystem
+  events      Get real time events from the server
+  exec        Run a command in a running container
+  export      Export a container's filesystem as a tar archive
+  history     Show the history of an image
+  images      List images
+  import      Import the contents from a tarball to create a filesystem image
+  info        Display system-wide information
+  inspect     Return low-level information on Docker objects
+  kill        Kill one or more running containers
+  load        Load an image from a tar archive or STDIN
+  login       Log in to a Docker registry
+  logout      Log out from a Docker registry
+  logs        Fetch the logs of a container
+  pause       Pause all processes within one or more containers
+  port        List port mappings or a specific mapping for the container
+  ps          List containers
+  pull        Pull an image or a repository from a registry
+  push        Push an image or a repository to a registry
+  rename      Rename a container
+  restart     Restart one or more containers
+  rm          Remove one or more containers
+  rmi         Remove one or more images
+  run         Run a command in a new container
+  save        Save one or more images to a tar archive (streamed to STDOUT by default)
+  search      Search the Docker Hub for images
+  start       Start one or more stopped containers
+  stats       Display a live stream of container(s) resource usage statistics
+  stop        Stop one or more running containers
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+  top         Display the running processes of a container
+  unpause     Unpause all processes within one or more containers
+  update      Update configuration of one or more containers
+  version     Show the Docker version information
+  wait        Block until one or more containers stop, then print their exit codes
+
+Run 'docker COMMAND --help' for more information on a command.
+
+To get more help with docker, check out our guides at https://docs.docker.com/go/guides/
+
+ubuntu@ubunu2004:~$ sudo docker version
+Client: Docker Engine - Community
+ Version:           20.10.22
+ API version:       1.41
+ Go version:        go1.18.9
+ Git commit:        3a2c30b
+ Built:             Thu Dec 15 22:28:08 2022
+ OS/Arch:           linux/amd64
+ Context:           default
+ Experimental:      true
+
+Server: Docker Engine - Community
+ Engine:
+  Version:          20.10.22
+  API version:      1.41 (minimum version 1.12)
+  Go version:       go1.18.9
+  Git commit:       42c8b31
+  Built:            Thu Dec 15 22:25:58 2022
+  OS/Arch:          linux/amd64
+  Experimental:     false
+ containerd:
+  Version:          1.6.15
+  GitCommit:        5b842e528e99d4d4c1686467debf2bd4b88ecd86
+ runc:
+  Version:          1.1.4
+  GitCommit:        v1.1.4-0-g5fd4c4d
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        de40ad0
+ubuntu@ubunu2004:~$ docker ls
+docker: 'ls' is not a docker command.
+See 'docker --help'
+ubuntu@ubunu2004:~$ docker images
+Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/images/json": dial unix /var/run/docker.sock: connect: permission denied
+ubuntu@ubunu2004:~$ sudo docker images
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+ubuntu@ubunu2004:~$ git clone https://github.com/KruthikaMP/node-hello_Lab_Exam_Batch_2.git
+Cloning into 'node-hello_Lab_Exam_Batch_2'...
+remote: Enumerating objects: 50, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 50 (delta 0), reused 1 (delta 0), pack-reused 47
+Unpacking objects: 100% (50/50), 6.95 KiB | 118.00 KiB/s, done.
+ubuntu@ubunu2004:~$ LS
+LS: command not found
+ubuntu@ubunu2004:~$ ls
+ agent       a.out   Desktop     Downloads        main.c   msis    node-hello_Lab_Exam_Batch_2   Public     sort        UDPClient.c  'Untitled 1.odt'
+ agent.jar   CCPP    Documents   externalsort.c   mpi1.c   Music   Pictures                      remoting   Templates   UDPServer.c   Videos
+ubuntu@ubunu2004:~$ cd node-hello_Lab_Exam_Batch_2/
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ ls
+Dockerfile  index.js  package.json  package-lock.json  README.md
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker images
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker build -t mywedapp:1
+"docker build" requires exactly 1 argument.
+See 'docker build --help'.
+
+Usage:  docker build [OPTIONS] PATH | URL | -
+
+Build an image from a Dockerfile
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker build -t mywedapp:1 .
+Sending build context to Docker daemon  135.7kB
+Step 1/7 : FROM node:14
+14: Pulling from library/node
+ac7f2e1c7586: Pull complete 
+dbcdf7fce05b: Pull complete 
+0ed0c2752d84: Pull complete 
+bf01cd4ea334: Pull complete 
+739282cf09da: Pull complete 
+64c938dc9431: Pull complete 
+cd85135aa249: Pull complete 
+27ce0d668985: Pull complete 
+5c402cd3edc3: Pull complete 
+Digest: sha256:0c888dc647d36f5a895edb6b1b1c96ae81064455e0cdeee0792e14927604ca99
+Status: Downloaded newer image for node:14
+ ---> ac1030c3e2d9
+Step 2/7 : WORKDIR /usr/src/app
+ ---> Running in d326b5374918
+Removing intermediate container d326b5374918
+ ---> 5033f91f487c
+Step 3/7 : COPY package*.json ./
+ ---> 490ec520e96e
+Step 4/7 : RUN npm install
+ ---> Running in c5a5a34ae677
+npm WARN node-hello@1.0.0 No description
+
+up to date in 0.739s
+found 0 vulnerabilities
+
+Removing intermediate container c5a5a34ae677
+ ---> c9969ab11258
+Step 5/7 : COPY . .
+ ---> 2e657fe7e722
+Step 6/7 : EXPOSE 3000
+ ---> Running in 56f8be27a6ef
+Removing intermediate container 56f8be27a6ef
+ ---> 2d3e1c9e8693
+Step 7/7 : CMD [ "node", "index.js" ]
+ ---> Running in 666d7b74d218
+Removing intermediate container 666d7b74d218
+ ---> 5a21b1353b7e
+Successfully built 5a21b1353b7e
+Successfully tagged mywedapp:1
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker images
+REPOSITORY   TAG       IMAGE ID       CREATED          SIZE
+mywedapp     1         5a21b1353b7e   18 seconds ago   916MB
+node         14        ac1030c3e2d9   27 hours ago     916MB
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker run -itd --name myweb -p 8080:8080 mywedapp:1
+ec86f841bf23f88f25a6e164d08dc57c4c60da43c50825b9a01896286d87a51a
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker ps
+CONTAINER ID   IMAGE        COMMAND                  CREATED         STATUS         PORTS                                                 NAMES
+ec86f841bf23   mywedapp:1   "docker-entrypoint.s…"   8 seconds ago   Up 6 seconds   3000/tcp, 0.0.0.0:8080->8080/tcp, :::8080->8080/tcp   myweb
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo ufw allow 3000
+Rule added
+Rule added (v6)
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo ufw status
+Status: active
+
+To                         Action      From
+--                         ------      ----
+8080                       ALLOW       Anywhere                  
+3000                       ALLOW       Anywhere                  
+8080 (v6)                  ALLOW       Anywhere (v6)             
+3000 (v6)                  ALLOW       Anywhere (v6)             
+
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo ufw enable 3000
+ERROR: Invalid syntax
+
+Usage: ufw COMMAND
+
+Commands:
+ enable                          enables the firewall
+ disable                         disables the firewall
+ default ARG                     set default policy
+ logging LEVEL                   set logging to LEVEL
+ allow ARGS                      add allow rule
+ deny ARGS                       add deny rule
+ reject ARGS                     add reject rule
+ limit ARGS                      add limit rule
+ delete RULE|NUM                 delete RULE
+ insert NUM RULE                 insert RULE at NUM
+ route RULE                      add route RULE
+ route delete RULE|NUM           delete route RULE
+ route insert NUM RULE           insert route RULE at NUM
+ reload                          reload firewall
+ reset                           reset firewall
+ status                          show firewall status
+ status numbered                 show firewall status as numbered list of RULES
+ status verbose                  show verbose firewall status
+ show ARG                        show firewall report
+ version                         display version information
+
+Application profile commands:
+ app list                        list application profiles
+ app info PROFILE                show information on PROFILE
+ app update PROFILE              update PROFILE
+ app default ARG                 set default application policy
+
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo ufw enable
+Firewall is active and enabled on system startup
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo ufw allow 3000
+Skipping adding existing rule
+Skipping adding existing rule (v6)
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo ufw status
+Status: active
+
+To                         Action      From
+--                         ------      ----
+8080                       ALLOW       Anywhere                  
+3000                       ALLOW       Anywhere                  
+8080 (v6)                  ALLOW       Anywhere (v6)             
+3000 (v6)                  ALLOW       Anywhere (v6)             
+
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker ps
+CONTAINER ID   IMAGE        COMMAND                  CREATED         STATUS         PORTS                                                 NAMES
+ec86f841bf23   mywedapp:1   "docker-entrypoint.s…"   3 minutes ago   Up 3 minutes   3000/tcp, 0.0.0.0:8080->8080/tcp, :::8080->8080/tcp   myweb
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker run -itd --name myweb -p 8080:3000 mywedapp:1
+docker: Error response from daemon: Conflict. The container name "/myweb" is already in use by container "ec86f841bf23f88f25a6e164d08dc57c4c60da43c50825b9a01896286d87a51a". You have to remove (or rename) that container to be able to reuse that name.
+See 'docker run --help'.
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker run -itd --name myweb1 -p 8080:3000 mywedapp:1
+034abc409b72d6a3f1394a624746f3b93f03391cc00951f6f4aeedd3909698eb
+docker: Error response from daemon: driver failed programming external connectivity on endpoint myweb1 (293b0770a70f83a0d41c7e689eac45a7d6f48f3fb0019d15fa1a1dc4e280ba57): Bind for 0.0.0.0:8080 failed: port is already allocated.
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker run -itd --name myweb1 -p 8080:3010 mywedapp:1
+docker: Error response from daemon: Conflict. The container name "/myweb1" is already in use by container "034abc409b72d6a3f1394a624746f3b93f03391cc00951f6f4aeedd3909698eb". You have to remove (or rename) that container to be able to reuse that name.
+See 'docker run --help'.
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker run -itd --name myweb2 -p 8080:3010 mywedapp:1
+74306577aa9f38f60cc4269be30a500e2ed6aaaa83dc59ac0d130539c4a66f70
+docker: Error response from daemon: driver failed programming external connectivity on endpoint myweb2 (8dba5690f5eb24711f564f4375d70f914e2097b6d4c99794e40ff0cf8b8513d0): Bind for 0.0.0.0:8080 failed: port is already allocated.
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker run -itd --name myweb2 -p 8080:3011 mywedapp:1
+docker: Error response from daemon: Conflict. The container name "/myweb2" is already in use by container "74306577aa9f38f60cc4269be30a500e2ed6aaaa83dc59ac0d130539c4a66f70". You have to remove (or rename) that container to be able to reuse that name.
+See 'docker run --help'.
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker run -itd --name myweb3 -p 8080:3030 mywedapp:1
+5b0594cf9bebf8bcbb0f18099eb7d9eadcb4d6d9b3b9e32330f2bad2ae4b3cdb
+docker: Error response from daemon: driver failed programming external connectivity on endpoint myweb3 (5567cc1c84313c432007f0e90eada37aa9d791959a4a689fcbdcd5dbe0c7dbd4): Bind for 0.0.0.0:8080 failed: port is already allocated.
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker run -itd --name myweb4 -p 80:3050 mywedapp:1
+5aa7d6c7766e7b87365fad246d6b8238d3ba4d9c0b0109e48486366e222ceb2a
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker ps
+CONTAINER ID   IMAGE        COMMAND                  CREATED         STATUS         PORTS                                                 NAMES
+5aa7d6c7766e   mywedapp:1   "docker-entrypoint.s…"   7 seconds ago   Up 5 seconds   3000/tcp, 0.0.0.0:80->3050/tcp, :::80->3050/tcp       myweb4
+ec86f841bf23   mywedapp:1   "docker-entrypoint.s…"   5 minutes ago   Up 5 minutes   3000/tcp, 0.0.0.0:8080->8080/tcp, :::8080->8080/tcp   myweb
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo ufw allow 3050
+Rule added
+Rule added (v6)
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo ufw status 
+Status: active
+
+To                         Action      From
+--                         ------      ----
+8080                       ALLOW       Anywhere                  
+3000                       ALLOW       Anywhere                  
+3050                       ALLOW       Anywhere                  
+8080 (v6)                  ALLOW       Anywhere (v6)             
+3000 (v6)                  ALLOW       Anywhere (v6)             
+3050 (v6)                  ALLOW       Anywhere (v6)             
+
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo ufw enable
+Firewall is active and enabled on system startup
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ ls
+Dockerfile  index.js  package.json  package-lock.json  README.md
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker ps
+CONTAINER ID   IMAGE        COMMAND                  CREATED          STATUS          PORTS                                                 NAMES
+5aa7d6c7766e   mywedapp:1   "docker-entrypoint.s…"   8 minutes ago    Up 8 minutes    3000/tcp, 0.0.0.0:80->3050/tcp, :::80->3050/tcp       myweb4
+ec86f841bf23   mywedapp:1   "docker-entrypoint.s…"   13 minutes ago   Up 13 minutes   3000/tcp, 0.0.0.0:8080->8080/tcp, :::8080->8080/tcp   myweb
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker rm 5aa ec8
+Error response from daemon: You cannot remove a running container 5aa7d6c7766e7b87365fad246d6b8238d3ba4d9c0b0109e48486366e222ceb2a. Stop the container before attempting removal or force remove
+Error response from daemon: You cannot remove a running container ec86f841bf23f88f25a6e164d08dc57c4c60da43c50825b9a01896286d87a51a. Stop the container before attempting removal or force remove
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker rm -f  5aa ec8
+5aa
+ec8
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker run -itd --name myweb1 -p 8080:3000 mywedapp:1
+docker: Error response from daemon: Conflict. The container name "/myweb1" is already in use by container "034abc409b72d6a3f1394a624746f3b93f03391cc00951f6f4aeedd3909698eb". You have to remove (or rename) that container to be able to reuse that name.
+See 'docker run --help'.
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker ps -a
+CONTAINER ID   IMAGE        COMMAND                  CREATED          STATUS    PORTS     NAMES
+5b0594cf9beb   mywedapp:1   "docker-entrypoint.s…"   10 minutes ago   Created             myweb3
+74306577aa9f   mywedapp:1   "docker-entrypoint.s…"   10 minutes ago   Created             myweb2
+034abc409b72   mywedapp:1   "docker-entrypoint.s…"   10 minutes ago   Created             myweb1
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker rm -f  5b0 743 034
+5b0
+743
+034
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker imagees
+docker: 'imagees' is not a docker command.
+See 'docker --help'
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker images
+REPOSITORY   TAG       IMAGE ID       CREATED          SIZE
+mywedapp     1         5a21b1353b7e   19 minutes ago   916MB
+node         14        ac1030c3e2d9   27 hours ago     916MB
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker run -itd --name myweb1 -p 8080:3000 mywedapp:1
+b3244921c516f4081c6541000f9491ba449ea932df9b251eefef96c8638a3742
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo ufw status
+Status: active
+
+To                         Action      From
+--                         ------      ----
+8080                       ALLOW       Anywhere                  
+3000                       ALLOW       Anywhere                  
+3050                       ALLOW       Anywhere                  
+8080 (v6)                  ALLOW       Anywhere (v6)             
+3000 (v6)                  ALLOW       Anywhere (v6)             
+3050 (v6)                  ALLOW       Anywhere (v6)             
+
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker ps
+CONTAINER ID   IMAGE        COMMAND                  CREATED              STATUS              PORTS                                       NAMES
+b3244921c516   mywedapp:1   "docker-entrypoint.s…"   About a minute ago   Up About a minute   0.0.0.0:8080->3000/tcp, :::8080->3000/tcp   myweb1
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker tag mywedapp:1 /kruthikamp/mywedapp:1
+Error parsing reference: "/kruthikamp/mywedapp:1" is not a valid repository/tag: invalid reference format
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker login
+Login with your Docker ID to push and pull images from Docker Hub. If you don't have a Docker ID, head over to https://hub.docker.com to create one.
+Username: kruthikamp
+Password: 
+WARNING! Your password will be stored unencrypted in /root/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker tag mywedapp:1 /kruthikamp/mywedapp:1
+Error parsing reference: "/kruthikamp/mywedapp:1" is not a valid repository/tag: invalid reference format
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker tag mywedapp:1 kruthikamp/mywedapp:1
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker push mywedapp/mywedapp:1
+The push refers to repository [docker.io/mywedapp/mywedapp]
+An image does not exist locally with the tag: mywedapp/mywedapp
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker push mywedapp:1/mywedapp:1
+The push refers to repository [mywedapp:1/mywedapp]
+An image does not exist locally with the tag: mywedapp:1/mywedapp
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker push mywedapp:1/mywedapp
+Using default tag: latest
+The push refers to repository [mywedapp:1/mywedapp]
+An image does not exist locally with the tag: mywedapp:1/mywedapp
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker push kruthikamp/mywedapp
+Using default tag: latest
+The push refers to repository [docker.io/kruthikamp/mywedapp]
+tag does not exist: kruthikamp/mywedapp:latest
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker push kruthikamp/mywedapp:1
+The push refers to repository [docker.io/kruthikamp/mywedapp]
+21ac926b631b: Pushed 
+061466238321: Pushed 
+88cd0a8b7c0d: Pushed 
+abd573b31b28: Pushed 
+c225eb36ef5c: Mounted from library/node 
+1538b9fd747c: Mounted from library/node 
+68a7aae28099: Mounted from library/node 
+0b1c009597ad: Mounted from library/node 
+b9b05a3855c6: Mounted from library/node 
+132e6b0c0edd: Mounted from library/node 
+d5ce45249ce1: Mounted from library/node 
+b7392dc58749: Mounted from library/node 
+083aacb889b3: Mounted from library/node 
+1: digest: sha256:88e1f101897211750c0e550b8587283e2da54e472f66219928f9050e45d482c7 size: 3045
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ cd
+ubuntu@ubunu2004:~$ ls
+ agent       a.out   Desktop     Downloads        main.c   msis    node-hello_Lab_Exam_Batch_2   Public     sort        UDPClient.c  'Untitled 1.odt'
+ agent.jar   CCPP    Documents   externalsort.c   mpi1.c   Music   Pictures                      remoting   Templates   UDPServer.c   Videos
+ubuntu@ubunu2004:~$ git clone https://github.com/sreepathysois/FullStackApp1.git
+Cloning into 'FullStackApp1'...
+remote: Enumerating objects: 25, done.
+remote: Counting objects: 100% (25/25), done.
+remote: Compressing objects: 100% (21/21), done.
+remote: Total 25 (delta 3), reused 17 (delta 0), pack-reused 0
+Unpacking objects: 100% (25/25), 14.57 KiB | 236.00 KiB/s, done.
+ubuntu@ubunu2004:~$ ls
+ agent       a.out   Desktop     Downloads        FullStackApp1   mpi1.c   Music                         Pictures   remoting   Templates     UDPServer.c       Videos
+ agent.jar   CCPP    Documents   externalsort.c   main.c          msis     node-hello_Lab_Exam_Batch_2   Public     sort       UDPClient.c  'Untitled 1.odt'
+ubuntu@ubunu2004:~$ cd FullStackApp1/
+ubuntu@ubunu2004:~/FullStackApp1$ ls
+config.php  db  docker-compose.yml  index.php  test.php
+ubuntu@ubunu2004:~/FullStackApp1$ sudo docker-compose -f docker-compose_updated.yml up --build -d
+sudo: docker-compose: command not found
+ubuntu@ubunu2004:~/FullStackApp1$ sudo curl -L https://github.com/docker/compose/releases/download/1.29.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0
+100 12.1M  100 12.1M    0     0  1628k      0  0:00:07  0:00:07 --:--:-- 2613k
+ubuntu@ubunu2004:~/FullStackApp1$ sudo chmod +x /usr/local/bin/docker-compose
+ubuntu@ubunu2004:~/FullStackApp1$ docker-compose --version
+docker-compose version 1.29.2, build 5becea4c
+ubuntu@ubunu2004:~/FullStackApp1$ sudo docker-compose -f docker-compose_updated.yml up --build -d
+ERROR: .FileNotFoundError: [Errno 2] No such file or directory: './docker-compose_updated.yml'
+ubuntu@ubunu2004:~/FullStackApp1$ sudo docker-compose -f docker-compose.yml up --build -d
+Creating network "fullstackapp1_default" with the default driver
+Pulling www (php:apache)...
+apache: Pulling from library/php
+8740c948ffd4: Pull complete
+1873be858264: Pull complete
+7ce6a163d8c1: Pull complete
+008a172010ba: Pull complete
+d15353ae3d77: Pull complete
+223eb1888c0f: Pull complete
+83374c2a967a: Pull complete
+2db2dd61f5dd: Pull complete
+ecda1795d2b7: Pull complete
+13f5d9a95962: Pull complete
+563fafb0839a: Pull complete
+d230ac3359df: Pull complete
+8a17d3b7bd6b: Pull complete
+Digest: sha256:bbf9c175420cdfdf58e93e44126aa110cf16b006f82a990ca76f249a79bebd6d
+Status: Downloaded newer image for php:apache
+Pulling db (mysql:latest)...
+latest: Pulling from library/mysql
+0ed027b72ddc: Pull complete
+0296159747f1: Pull complete
+3d2f9b664bd3: Pull complete
+df6519f81c26: Pull complete
+36bb5e56d458: Pull complete
+054e8fde88d0: Pull complete
+f2b494c50c7f: Pull complete
+132bc0d471b8: Pull complete
+135ec7033a05: Pull complete
+5961f0272472: Pull complete
+75b5f7a3d3a4: Pull complete
+Digest: sha256:3d7ae561cf6095f6aca8eb7830e1d14734227b1fb4748092f2be2cfbccf7d614
+Status: Downloaded newer image for mysql:latest
+Pulling phpmyadmin (phpmyadmin/phpmyadmin:)...
+latest: Pulling from phpmyadmin/phpmyadmin
+214ca5fb9032: Pull complete
+cd813a1b2cb8: Pull complete
+63cf7574573d: Pull complete
+54c27146d16e: Pull complete
+078f4450f949: Pull complete
+5f145e355bc4: Pull complete
+fdc797cb9eea: Pull complete
+af45e7153a31: Pull complete
+b546fbaf263b: Pull complete
+16dd2cabbcd2: Pull complete
+30a426b49280: Pull complete
+c94e73d5f13e: Pull complete
+2f5a3464a278: Pull complete
+a4f9f723c297: Pull complete
+5b04d16a8086: Pull complete
+2a3d1fa22772: Pull complete
+ef56affc4552: Pull complete
+9b9b44731108: Pull complete
+Digest: sha256:ae6dadd9cf3c158e42937788f7255fa820ea3daef0349226d8d43f32e76535e1
+Status: Downloaded newer image for phpmyadmin/phpmyadmin:latest
+Creating fullstackapp1_db_1         ... done
+Creating fullstackapp1_phpmyadmin_1 ... done
+Creating fullstackapp1_www_1        ... done
+ubuntu@ubunu2004:~/FullStackApp1$ sudo docker ps
+CONTAINER ID   IMAGE                   COMMAND                  CREATED          STATUS          PORTS                                                                      NAMES
+8442d6546eb8   php:apache              "docker-php-entrypoi…"   30 seconds ago   Up 27 seconds   0.0.0.0:80->80/tcp, :::80->80/tcp, 0.0.0.0:443->443/tcp, :::443->443/tcp   fullstackapp1_www_1
+ba5a571085c5   mysql:latest            "docker-entrypoint.s…"   30 seconds ago   Up 27 seconds   3306/tcp, 33060/tcp                                                        fullstackapp1_db_1
+d5af330af679   phpmyadmin/phpmyadmin   "/docker-entrypoint.…"   30 seconds ago   Up 27 seconds   0.0.0.0:8001->80/tcp, :::8001->80/tcp                                      fullstackapp1_phpmyadmin_1
+b3244921c516   mywedapp:1              "docker-entrypoint.s…"   24 minutes ago   Up 24 minutes   0.0.0.0:8080->3000/tcp, :::8080->3000/tcp                                  myweb1
+ubuntu@ubunu2004:~/FullStackApp1$ ls
+config.php  db  docker-compose.yml  index.php  test.php
+ubuntu@ubunu2004:~/FullStackApp1$ sudo vi docker-compose.yml 
+ubuntu@ubunu2004:~/FullStackApp1$ sudo ufw allow 3306
+Rule added
+Rule added (v6)
+ubuntu@ubunu2004:~/FullStackApp1$ sudo ufw allow 33060
+Rule added
+Rule added (v6)
+ubuntu@ubunu2004:~/FullStackApp1$ sudo ufw allow status
+ERROR: Could not find a profile matching 'status'
+ubuntu@ubunu2004:~/FullStackApp1$ sudo ufw status
+Status: active
+
+To                         Action      From
+--                         ------      ----
+8080                       ALLOW       Anywhere                  
+3000                       ALLOW       Anywhere                  
+3050                       ALLOW       Anywhere                  
+3306                       ALLOW       Anywhere                  
+33060                      ALLOW       Anywhere                  
+8080 (v6)                  ALLOW       Anywhere (v6)             
+3000 (v6)                  ALLOW       Anywhere (v6)             
+3050 (v6)                  ALLOW       Anywhere (v6)             
+3306 (v6)                  ALLOW       Anywhere (v6)             
+33060 (v6)                 ALLOW       Anywhere (v6)             
+
+ubuntu@ubunu2004:~/FullStackApp1$ sudo docker ps -a
+CONTAINER ID   IMAGE                   COMMAND                  CREATED          STATUS          PORTS                                                                      NAMES
+8442d6546eb8   php:apache              "docker-php-entrypoi…"   3 minutes ago    Up 3 minutes    0.0.0.0:80->80/tcp, :::80->80/tcp, 0.0.0.0:443->443/tcp, :::443->443/tcp   fullstackapp1_www_1
+ba5a571085c5   mysql:latest            "docker-entrypoint.s…"   3 minutes ago    Up 3 minutes    3306/tcp, 33060/tcp                                                        fullstackapp1_db_1
+d5af330af679   phpmyadmin/phpmyadmin   "/docker-entrypoint.…"   3 minutes ago    Up 3 minutes    0.0.0.0:8001->80/tcp, :::8001->80/tcp                                      fullstackapp1_phpmyadmin_1
+b3244921c516   mywedapp:1              "docker-entrypoint.s…"   28 minutes ago   Up 28 minutes   0.0.0.0:8080->3000/tcp, :::8080->3000/tcp                                  myweb1
+ubuntu@ubunu2004:~/FullStackApp1$ sudo docker rm -f b32 
+b32
+ubuntu@ubunu2004:~/FullStackApp1$ sudo ufw status
+Status: active
+
+To                         Action      From
+--                         ------      ----
+8080                       ALLOW       Anywhere                  
+3000                       ALLOW       Anywhere                  
+3050                       ALLOW       Anywhere                  
+3306                       ALLOW       Anywhere                  
+33060                      ALLOW       Anywhere                  
+8080 (v6)                  ALLOW       Anywhere (v6)             
+3000 (v6)                  ALLOW       Anywhere (v6)             
+3050 (v6)                  ALLOW       Anywhere (v6)             
+3306 (v6)                  ALLOW       Anywhere (v6)             
+33060 (v6)                 ALLOW       Anywhere (v6)             
+
+ubuntu@ubunu2004:~/FullStackApp1$ sudo docker ps -a
+CONTAINER ID   IMAGE                   COMMAND                  CREATED         STATUS         PORTS                                                                      NAMES
+8442d6546eb8   php:apache              "docker-php-entrypoi…"   4 minutes ago   Up 4 minutes   0.0.0.0:80->80/tcp, :::80->80/tcp, 0.0.0.0:443->443/tcp, :::443->443/tcp   fullstackapp1_www_1
+ba5a571085c5   mysql:latest            "docker-entrypoint.s…"   4 minutes ago   Up 4 minutes   3306/tcp, 33060/tcp                                                        fullstackapp1_db_1
+d5af330af679   phpmyadmin/phpmyadmin   "/docker-entrypoint.…"   4 minutes ago   Up 4 minutes   0.0.0.0:8001->80/tcp, :::8001->80/tcp                                      fullstackapp1_phpmyadmin_1
+ubuntu@ubunu2004:~/FullStackApp1$ sudo docker ps 
+CONTAINER ID   IMAGE                   COMMAND                  CREATED         STATUS         PORTS                                                                      NAMES
+8442d6546eb8   php:apache              "docker-php-entrypoi…"   4 minutes ago   Up 4 minutes   0.0.0.0:80->80/tcp, :::80->80/tcp, 0.0.0.0:443->443/tcp, :::443->443/tcp   fullstackapp1_www_1
+ba5a571085c5   mysql:latest            "docker-entrypoint.s…"   4 minutes ago   Up 4 minutes   3306/tcp, 33060/tcp                                                        fullstackapp1_db_1
+d5af330af679   phpmyadmin/phpmyadmin   "/docker-entrypoint.…"   4 minutes ago   Up 4 minutes   0.0.0.0:8001->80/tcp, :::8001->80/tcp                                      fullstackapp1_phpmyadmin_1
+ubuntu@ubunu2004:~/FullStackApp1$ sudo ufw allow 443
+Rule added
+Rule added (v6)
+ubuntu@ubunu2004:~/FullStackApp1$ sudo ufw enable 
+Firewall is active and enabled on system startup
+ubuntu@ubunu2004:~/FullStackApp1$ sudo vi docker-compose.yml 
+ubuntu@ubunu2004:~/FullStackApp1$ sudo vi docker-compose.yml 
+ubuntu@ubunu2004:~/FullStackApp1$ sudo nano docker-compose.yml 
+ubuntu@ubunu2004:~/FullStackApp1$ sudo docker-compose -f docker-compose.yml up --build -d
+Pulling db (mysqli:latest)...
+ERROR: Get "https://registry-1.docker.io/v2/": net/http: request canceled (Client.Timeout exceeded while awaiting headers)
+ubuntu@ubunu2004:~/FullStackApp1$ sudo docker volume ls
+DRIVER    VOLUME NAME
+local     43cc801f194164356477f241be2d5c9f339da84f0a059365431d25f47a9c0ad3
+ubuntu@ubunu2004:~/FullStackApp1$ sudo docker-compose -f docker-compose_updated.yml down
+ERROR: .FileNotFoundError: [Errno 2] No such file or directory: './docker-compose_updated.yml'
+ubuntu@ubunu2004:~/FullStackApp1$ sudo docker-compose -f docker-compose.yml down
+Stopping fullstackapp1_www_1        ... done
+Stopping fullstackapp1_db_1         ... done
+Stopping fullstackapp1_phpmyadmin_1 ... done
+Removing fullstackapp1_www_1        ... done
+Removing fullstackapp1_db_1         ... done
+Removing fullstackapp1_phpmyadmin_1 ... done
+Removing network fullstackapp1_default
+ubuntu@ubunu2004:~/FullStackApp1$ sudo docker volume ls
+DRIVER    VOLUME NAME
+local     43cc801f194164356477f241be2d5c9f339da84f0a059365431d25f47a9c0ad3
+ubuntu@ubunu2004:~/FullStackApp1$ sudo docker ps 
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+ubuntu@ubunu2004:~/FullStackApp1$ sudo docker ps 
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+ubuntu@ubunu2004:~/FullStackApp1$ sudo docker ps 
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+ubuntu@ubunu2004:~/FullStackApp1$ sudo docker ps  -a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+ubuntu@ubunu2004:~/FullStackApp1$ cd
+ubuntu@ubunu2004:~$ ls
+ agent       a.out   Desktop     Downloads        FullStackApp1   mpi1.c   Music                         Pictures   remoting   Templates     UDPServer.c       Videos
+ agent.jar   CCPP    Documents   externalsort.c   main.c          msis     node-hello_Lab_Exam_Batch_2   Public     sort       UDPClient.c  'Untitled 1.odt'
+ubuntu@ubunu2004:~$ cd node-hello_Lab_Exam_Batch_2/
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ ls
+Dockerfile  index.js  package.json  package-lock.json  README.md
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker build -t myapp:1 .
+Sending build context to Docker daemon  135.7kB
+Step 1/7 : FROM node:14
+ ---> ac1030c3e2d9
+Step 2/7 : WORKDIR /usr/src/app
+ ---> Using cache
+ ---> 5033f91f487c
+Step 3/7 : COPY package*.json ./
+ ---> Using cache
+ ---> 490ec520e96e
+Step 4/7 : RUN npm install
+ ---> Using cache
+ ---> c9969ab11258
+Step 5/7 : COPY . .
+ ---> Using cache
+ ---> 2e657fe7e722
+Step 6/7 : EXPOSE 3000
+ ---> Using cache
+ ---> 2d3e1c9e8693
+Step 7/7 : CMD [ "node", "index.js" ]
+ ---> Using cache
+ ---> 5a21b1353b7e
+Successfully built 5a21b1353b7e
+Successfully tagged myapp:1
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker images
+REPOSITORY              TAG       IMAGE ID       CREATED        SIZE
+mywedapp                1         5a21b1353b7e   2 hours ago    916MB
+kruthikamp/mywedapp     1         5a21b1353b7e   2 hours ago    916MB
+myapp                   1         5a21b1353b7e   2 hours ago    916MB
+php                     apache    bb398bcf3ba4   27 hours ago   460MB
+node                    14        ac1030c3e2d9   28 hours ago   916MB
+mysql                   latest    7484689f290f   5 weeks ago    538MB
+phpmyadmin/phpmyadmin   latest    4a4023c7e22a   8 months ago   510MB
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker rmi -f 5a2 bb3 ac1 748 4a4
+Untagged: kruthikamp/mywedapp:1
+Untagged: kruthikamp/mywedapp@sha256:88e1f101897211750c0e550b8587283e2da54e472f66219928f9050e45d482c7
+Untagged: myapp:1
+Untagged: mywedapp:1
+Deleted: sha256:5a21b1353b7ed41c4b6622f75e20ff46719160d2a9b91ab86bca473709f5bbb4
+Deleted: sha256:2d3e1c9e869348eef8781f76ee10ade4bbe05dec4d36110fbe1bdb93005a92be
+Deleted: sha256:2e657fe7e722ddba2e9df83814563bbae3950d541b0b763b06fa5da2ef07d960
+Deleted: sha256:02dffaf3168cdcf2088b62c44a5285dcbecaadbf1e3027f04cfbaffa437e7830
+Deleted: sha256:c9969ab11258dadee77e9ff2c9b0cb3a2d4db22cc9c4fada0f022757e9d52788
+Deleted: sha256:91f4547c8d5259f3321e1f87785cf59aa6049142e8639de15ef43fdf800e6f92
+Deleted: sha256:490ec520e96e1c5d3ef2d1821fe03f6f242319d9576d0ef1b1c964bf456cebd8
+Deleted: sha256:2c708eaf9f0afcd6506ec8f2988b9fa700a307cbbf516cbce4251ec9b62b573e
+Deleted: sha256:5033f91f487c0f24803ee09c15d1d708b7b8b26b9662cf4000e7615b5b5b67a1
+Deleted: sha256:f20e1aa933ccc878f478cf232db7303204355a874b3ab242d9a70026c798f56d
+Untagged: php:apache
+Untagged: php@sha256:bbf9c175420cdfdf58e93e44126aa110cf16b006f82a990ca76f249a79bebd6d
+Deleted: sha256:bb398bcf3ba43497879b39b591921b0cd7e4fc91cab109ec56d3f0087acf97df
+Deleted: sha256:445c19d3316f464236cf5185eb6d067e66f7b0902118bcc52f1268cb5689a438
+Deleted: sha256:3acff2b78ffa28d7f2c82fdb03be58dcf572d16efe4f27f803eed8b918e33b19
+Deleted: sha256:ac3b1972b959a91b7f67c6c8306c539be8622815e9deac7f6e784246b06f3b01
+Deleted: sha256:e906a704b53df054bfb4ee243278ff4c92ace6ff2acfa8f8a8696152d6895970
+Deleted: sha256:5fa2f19b0e9447b54d50bf2c9c1b8b0a454dbb5cf9309c6ad39af7df3df7360a
+Deleted: sha256:e731d3b4eacd28237fef9780eeb3b2c7607abe271fe8a16e3fb23f5ba6afc205
+Deleted: sha256:d0a70d595e86d6a9cdd9fd685ee2e54ccb557640f1ef69e70879c78fac5ff8f3
+Deleted: sha256:c97fdcb4354d7ba113eab679c7533929bb5eae80156f572290a473bce0162850
+Deleted: sha256:5f20948ffd7b4f623fada6810b21c65d1153f0e78d303fbb9004505a7e3b5139
+Deleted: sha256:a0a48536e6436c6d2850626ee8ab1244a8862e7db3fcce095770ffe7f7de38c3
+Deleted: sha256:89010d1fae8941321268316d5436dde1e93144ceebcf4104a5ea57eb20d651d0
+Deleted: sha256:18361d576d16bc57283ecda9d78e9a66a560f110387f970307f034fc94a8a957
+Deleted: sha256:67a4178b7d47beb6a1f697a593bd0c6841c67eb0da00f2badefb05fd30671490
+Untagged: node:14
+Untagged: node@sha256:0c888dc647d36f5a895edb6b1b1c96ae81064455e0cdeee0792e14927604ca99
+Deleted: sha256:ac1030c3e2d90127cbeda24aeaf5d9a76540a64e6aa1fe5e8d10dd1389c005a6
+Deleted: sha256:7e65e28139cf7bc56203fd3c68e64e20372ceb177178949da956588a7d63c7ec
+Deleted: sha256:b9b4c4274f5597211d17505d4e557424b27af036ce30866c2418c7352a5b5b68
+Deleted: sha256:5c799ec6b594b11b6b1dc381bc3f9522288d39b741a92c598d97ea7517c4bc13
+Deleted: sha256:790c18b953991023d9b1f86b0899176a2157f6083fc697b7e5c7333d992c2bd1
+Deleted: sha256:23aeb6ae21a9f904d6ff9f46e941a0f9fa7104a2f2b01ca6ff3c5084415509be
+Deleted: sha256:88965c3ee330d7a86467d3af80517e71c61ffff7b173117aa0824e2a343a2e20
+Deleted: sha256:de0b1c4515cc58c325a66f19bfd37e2d4a4ee118534cd4795a2763a99f69dcb1
+Deleted: sha256:94bc179cb6e1c5455ba8dc5e79f95d62980f286d1a67c3fffe642ca3e623a8f2
+Deleted: sha256:083aacb889b3fc7c21c3c680a541f50b467ec7d7de97a48e43122d9a34219788
+Untagged: mysql:latest
+Untagged: mysql@sha256:3d7ae561cf6095f6aca8eb7830e1d14734227b1fb4748092f2be2cfbccf7d614
+Deleted: sha256:7484689f290f1defe06b65befc54cb6ad91a667cf0af59a265ffe76c46bd0478
+Deleted: sha256:fb249074ba1621ae2f0021b89488f93d6d591fd42f8bbc760be96a653d18a066
+Deleted: sha256:d7912527c048a7e206c51080f7f1b6b6c383ac8954e3da7d113b00d0a96c7044
+Deleted: sha256:994f05094d147f16e330dd7c9afd5e1472fbf1ce1038eb707e379ae507de6167
+Deleted: sha256:1337fe7eaf3ed7bac1f1842205c3c80466781cf2ed39d755043a24939a9c4408
+Deleted: sha256:4524762c7e21412b3fef00e189fe6b81e78f2751fef4f30355018dc3ab5f3cf2
+Deleted: sha256:5222c8df3c5115dcf6c3bb957d5160d5d7124437fa2f214368d67b8e1e6d670e
+Deleted: sha256:169fcf64e0d193fda3e49267b454ddeb4083f05e70bbcbbc6de2798944c3e555
+Deleted: sha256:bc87451b8005b06fa948e48c2644bc42107cf037499d15dad7f341064035dfc2
+Deleted: sha256:93c1acbf3bfcdd2a82a68687481569a07d619469a596b5f017f17cc092498eef
+Deleted: sha256:29bd3d7c6e1683e422776b9d3285e8a3f1272f07656fc63a941cb7729a169100
+Deleted: sha256:d3cc7b6aa7bc15725c1a856ce06fe436da3fbccf0c9c06b04e45f79b3439c154
+Untagged: phpmyadmin/phpmyadmin:latest
+Untagged: phpmyadmin/phpmyadmin@sha256:ae6dadd9cf3c158e42937788f7255fa820ea3daef0349226d8d43f32e76535e1
+Deleted: sha256:4a4023c7e22af1cd61420e306e13a82eb9035eb109d981395647f305c6841f89
+Deleted: sha256:58814878b8dc66a8a822ca560ae21ce37e982d5ce545a572412c4d6e4acc17a6
+Deleted: sha256:dcffc106cfde735adfc8db2b0a4bc74271a08ee4c60afbde5ad6cc03b29b8372
+Deleted: sha256:eda6f8dd1b8ea95a88c4a8d5dbdfe4cb36a092413aafb01f1aad06dda4cb3952
+Deleted: sha256:9b9ba7a94bd623bc6f383355b2e63c442f465e95cc8851d9f58ba9e88c9378ba
+Deleted: sha256:aa1d6e3769b9d3fb1ccfff0a3f643ceb26a90f94d78676bbbcfb56c159ab175f
+Deleted: sha256:fc657b84449b4c5cfd6b002d0e8c14cd5cda7181191d542bc42e55e243c44c9a
+Deleted: sha256:6f5fff743c8b16e7065a9b13d0f094a9b50e49f2995a9ba8b45d7422e518255b
+Deleted: sha256:81c4687675ecde35dcb94906c116a2d451eb2e0e0aaa5974395a2b6746335a5d
+Deleted: sha256:c0247f913af1e686aabe76c9ded0fd32acb7096ebf5851ff2ecd5eaa63fafee7
+Deleted: sha256:5b40d538203ecb47d87f6170dc81273b6e6d7eeef0b341e66e310797eb8cbcf0
+Deleted: sha256:56924ba0adce6edf1a15d6ce7ec570b6c84e4499d435f83171fe4fc363e1840b
+Deleted: sha256:a3a3e0e5900157cdf87b8e49963f1192e41fc5bee80f510c7f5db1d8c0f918b7
+Deleted: sha256:f6943d88f3a10b25e5d37690196d2a889ad24315f8a9e3013befb5f8a01af388
+Deleted: sha256:b201b5dc3726907d5ff8895ffc4d280af8e496aea100cf22536c0699e1788ea0
+Deleted: sha256:bb5e7a892aa5bb521c52ebdbbabc498d4cf1cbadbfdc3eb9859978a88b2bc5bb
+Deleted: sha256:0fc164e1f88f1c17c2b8ed1eae553835606cdda0050f9e725914963d17c51cdd
+Deleted: sha256:0489f41634bcd1f757c91991e1fe4d0b3acc879957012aa1147f56b5d530fdb3
+Deleted: sha256:fd95118eade99a75b949f634a0994e0f0732ff18c2573fabdfc8d4f95b092f0e
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker images
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker build -t myapp:1 .
+Sending build context to Docker daemon  135.7kB
+Step 1/7 : FROM node:14
+14: Pulling from library/node
+ac7f2e1c7586: Pull complete 
+dbcdf7fce05b: Pull complete 
+0ed0c2752d84: Pull complete 
+bf01cd4ea334: Pull complete 
+739282cf09da: Pull complete 
+64c938dc9431: Pull complete 
+cd85135aa249: Pull complete 
+27ce0d668985: Pull complete 
+5c402cd3edc3: Pull complete 
+Digest: sha256:0c888dc647d36f5a895edb6b1b1c96ae81064455e0cdeee0792e14927604ca99
+Status: Downloaded newer image for node:14
+ ---> ac1030c3e2d9
+Step 2/7 : WORKDIR /usr/src/app
+ ---> Running in bc7a7ae84c30
+Removing intermediate container bc7a7ae84c30
+ ---> 563e9c7ee9df
+Step 3/7 : COPY package*.json ./
+ ---> 36d71d03f0fe
+Step 4/7 : RUN npm install
+ ---> Running in 35af023a65f0
+npm WARN node-hello@1.0.0 No description
+
+up to date in 3.799s
+found 0 vulnerabilities
+
+Removing intermediate container 35af023a65f0
+ ---> b84ffa788f68
+Step 5/7 : COPY . .
+ ---> 129e0aa400ab
+Step 6/7 : EXPOSE 3000
+ ---> Running in aa7faa53df7d
+Removing intermediate container aa7faa53df7d
+ ---> 910c83ebb367
+Step 7/7 : CMD [ "node", "index.js" ]
+ ---> Running in 8a9d8d8589b0
+Removing intermediate container 8a9d8d8589b0
+ ---> f5dc18e43d71
+Successfully built f5dc18e43d71
+Successfully tagged myapp:1
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker images
+REPOSITORY   TAG       IMAGE ID       CREATED          SIZE
+myapp        1         f5dc18e43d71   14 seconds ago   916MB
+node         14        ac1030c3e2d9   28 hours ago     916MB
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker run myapp:1
+Server running on http://localhost:3000/
+^Z^Z^X^Z
+^Z^Z^Z^X^C
+
+
+^[[A^[[A^[[A^[[A
+exit
+			
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ 
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ 
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ 
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker images
+REPOSITORY   TAG       IMAGE ID       CREATED         SIZE
+myapp        1         f5dc18e43d71   2 minutes ago   916MB
+node         14        ac1030c3e2d9   28 hours ago    916MB
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ exit
+exit
+There are stopped jobs.
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ 
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ pwd
+/home/ubuntu/node-hello_Lab_Exam_Batch_2
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker run -itd --name=app1 --mount source=myvol,destination=/home/ubuntu/node-hello_Lab_Exam_Batch_2  myapp:1
+docker: Error response from daemon: Conflict. The container name "/app1" is already in use by container "effd8bb21ca60862efd041c9ca43c54e1562bbe11d7d2b682655394d7d7ee4c9". You have to remove (or rename) that container to be able to reuse that name.
+See 'docker run --help'.
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker run -itd --name=app2 --mount source=myvol,destination=/home/ubuntu/node-hello_Lab_Exam_Batch_2  myapp:1
+0d706f6e79f2886ff375d1a46f3236b58d36941a8a31d9746b06a57717826ab7
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker volume ls
+DRIVER    VOLUME NAME
+local     43cc801f194164356477f241be2d5c9f339da84f0a059365431d25f47a9c0ad3
+local     myvol
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker exec -it myvol sh
+Error: No such container: myvol
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker exec -it app2 sh
+# ls
+Dockerfile  README.md  index.js  package-lock.json  package.json
+# exit
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ ls
+Dockerfile  index.js  package.json  package-lock.json  README.md
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker ps
+CONTAINER ID   IMAGE     COMMAND                  CREATED              STATUS              PORTS      NAMES
+0d706f6e79f2   myapp:1   "docker-entrypoint.s…"   About a minute ago   Up About a minute   3000/tcp   app2
+effd8bb21ca6   myapp:1   "docker-entrypoint.s…"   2 minutes ago        Up 2 minutes        3000/tcp   app1
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker ps -a
+CONTAINER ID   IMAGE     COMMAND                  CREATED              STATUS              PORTS      NAMES
+0d706f6e79f2   myapp:1   "docker-entrypoint.s…"   About a minute ago   Up About a minute   3000/tcp   app2
+effd8bb21ca6   myapp:1   "docker-entrypoint.s…"   2 minutes ago        Up 2 minutes        3000/tcp   app1
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker volume inspect myvol
+[
+    {
+        "CreatedAt": "2023-01-12T16:27:46+05:30",
+        "Driver": "local",
+        "Labels": {},
+        "Mountpoint": "/var/lib/docker/volumes/myvol/_data",
+        "Name": "myvol",
+        "Options": {},
+        "Scope": "local"
+    }
+]
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker run -itd --name=app3 --mount source=/var/lib/docker/volumes/myvol/_data,destination=/home/ubuntu/node-hello_Lab_Exam_Batch_2  myapp:1
+docker: Error response from daemon: create /var/lib/docker/volumes/myvol/_data: "/var/lib/docker/volumes/myvol/_data" includes invalid characters for a local volume name, only "[a-zA-Z0-9][a-zA-Z0-9_.-]" are allowed. If you intended to pass a host directory, use absolute path.
+See 'docker run --help'.
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker run -it --name=example1 --mount source=/var/lib/docker/volumes/myvol/_data,destination=/home/ubuntu/node-hello_Lab_Exam_Batch_2  myapp:1
+docker: Error response from daemon: create /var/lib/docker/volumes/myvol/_data: "/var/lib/docker/volumes/myvol/_data" includes invalid characters for a local volume name, only "[a-zA-Z0-9][a-zA-Z0-9_.-]" are allowed. If you intended to pass a host directory, use absolute path.
+See 'docker run --help'.
+ubuntu@ubunu2004:~/node-hello_Lab_Exam_Batch_2$ sudo docker run -it --name=example1 --mount source=myvol,destination=/var/lib/docker/volumes/myvol/_data  myapp:1
+Server running on http://localhost:3000/
+^[[6~
+^[^C
+
